@@ -1,0 +1,139 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FULL HEIGHT FIX */
+html, body {
+    height: 100%;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e6ecf0, #f8f9fa, #dde5ec);
+
+    /* IMPORTANT */
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    background-color: #131921;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar h1 {
+    font-size: 26px;
+    color: #4dabf7;
+}
+
+.navbar p {
+    font-size: 13px;
+    color: #ccc;
+    margin-top: 4px;
+}
+
+/* MAIN */
+.main {
+    flex: 1; /* 🔥 THIS FIXES FOOTER ISSUE */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CALCULATOR BOX */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 320px;
+
+    /* improved shadow */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* DISPLAY */
+.display-box {
+    margin-bottom: 15px;
+}
+
+#history {
+    min-height: 20px;
+    font-size: 13px;
+    color: gray;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    text-align: right;
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* BUTTON GRID */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* BUTTON STYLE */
+.button {
+    background-color: #f0f0f0;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* HOVER */
+.button:hover {
+    background-color: #e0e0e0;
+}
+
+/* CLICK */
+.button:active {
+    transform: scale(0.95);
+}
+
+/* SPECIAL BUTTONS */
+#equals {
+    background-color: #febd69;
+    color: black;
+    font-weight: bold;
+}
+
+#clear {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+#backspace {
+    background-color: #adb5bd;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: #131921;
+    color: #ddd;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.footer-content p {
+    font-size: 13px;
+}

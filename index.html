@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Plus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="navbar">
+            <h1>Calculator Plus</h1>
+            <p>Simple and Fast Calculation Tool</p>
+        </div>
+    </header>
+
+    <!-- MAIN CALCULATOR -->
+    <div class="main">
+
+        <div class="container">
+
+            <!-- DISPLAY -->
+            <div class="display-box">
+                <div id="history"></div>
+                <input type="text" id="display" placeholder="0" readonly>
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="buttons">
+
+                <!-- Row 1 -->
+                <div class="button" id="clear">AC</div>
+                <div class="button" id="backspace">⌫</div>
+                <div class="button">(</div>
+                <div class="button">)</div>
+
+                <!-- Row 2 -->
+                <div class="button">7</div>
+                <div class="button">8</div>
+                <div class="button">9</div>
+                <div class="button">/</div>
+
+                <!-- Row 3 -->
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6</div>
+                <div class="button">*</div>
+
+                <!-- Row 4 -->
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">-</div>
+
+                <!-- Row 5 -->
+                <div class="button">0</div>
+                <div class="button">.</div>
+                <div class="button" id="equals">=</div>
+                <div class="button">+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>Designed and Developed as a Learning Project</p>
+            <p>© 2026 Calculator Plus</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
