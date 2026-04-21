@@ -27,7 +27,7 @@ This project evaluates mathematical expressions with proper operator precedence 
 
 ## 📸 Screenshot
 
-
+![Calculator](calculator.png)
 
 ---
 
